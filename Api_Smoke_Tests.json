@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "6f7d57e5-cda5-4457-9067-60946b52e291",
+		"name": "New Collection Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20335312"
+	},
+	"item": [
+		{
+			"name": "Increment USD and CAD",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    \"USD\",\n    \"CAD\"\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/requested_currencies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"requested_currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "increment USD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    \"USD\"\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/requested_currencies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"requested_currencies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recent USD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/currency/USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"currency",
+						"USD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/history/5/2022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"history",
+						"5",
+						"2022"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "history USD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/history/5/2022/USD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"history",
+						"5",
+						"2022",
+						"USD"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
