@@ -5,12 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 import org.infoshare.rekinyfinansjeryrest.dto.CurrencyStatisticsDTO;
 import org.infoshare.rekinyfinansjeryrest.service.CurrencyStatisticsService;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.transaction.Transactional;
-import java.time.format.DateTimeParseException;
 import java.util.List;
 
 @RestController
@@ -46,7 +43,7 @@ public class CurrencyStatisticsController {
     @GetMapping("/history/{month}/{year}/{code}")
     public List<CurrencyStatisticsDTO> getCurrencyStatisticsFromSelectedMonthForCurrency(
             @PathVariable("month") int month, @PathVariable("year") int year, @PathVariable("code") String code){
-        return currencyStatisticsService.getRecentCurrencyStatisticsForOneCurrencyFromSelectedMonth(code, month, year);
+        return currencyStatisticsService.getCurrencyStatisticsForOneCurrencyFromSelectedMonth(code, month, year);
     }
 
 
