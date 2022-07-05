@@ -12,6 +12,5 @@ import java.util.UUID;
 public interface CurrencyStatisticsRepository extends JpaRepository<CurrencyStatistics, UUID> {
     List<CurrencyStatistics> findCurrencyStatisticsByCodeInAndDate(List<String> codes, LocalDate date);
     List<CurrencyStatistics> findCurrencyStatisticsByDateBetween(LocalDate start, LocalDate end);
-
     List<CurrencyStatistics> findCurrencyStatisticsByCodeInAndDateBetween(List<String> codes, LocalDate start, LocalDate end);
 }

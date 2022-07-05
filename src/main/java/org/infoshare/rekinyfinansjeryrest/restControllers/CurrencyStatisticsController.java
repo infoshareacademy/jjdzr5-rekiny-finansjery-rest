@@ -65,8 +65,6 @@ public class CurrencyStatisticsController {
     @Setter
     @AllArgsConstructor
     public class ErrorCause {
-
         private String cause;
-
     }
 }

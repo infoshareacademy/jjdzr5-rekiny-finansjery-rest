@@ -20,7 +20,6 @@ public class CurrencyStatisticsService {
 
     private static final String ANY_CURRENCY = "ANY_CURRENCY";
     private static final String SUMMARY_NAME = "SUMMARY";
-
     private final static int RECENT_DAYS_WINDOW_SIZE = 30;
 
     private CurrencyStatisticsRepository currencyStatisticsRepository;
